@@ -1,0 +1,464 @@
+/* main.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Titillium+Web:wght@400;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #fff;
+  color: #2d2e32;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2d2e32;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #147efb;
+}
+
+.hero {
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.text-content {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.image-content {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.text-content h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 52px;
+}
+
+.text-content p {
+  margin-top: 50px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #2d2e32;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #147efb;
+}
+
+.image-content img.profile-pic {
+  width: 300px;
+  height: 300px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1.5px solid black;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    justify-content: center;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  .image-content img.profile-pic {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+.tech-stack {
+  text-align: center;
+  padding: 60px 2px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-right: 110px;
+}
+
+.tech-stack h2 {
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.tech-icons {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.tech-icons img {
+  width: 60px;
+  transition: transform 0.3s;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2);
+}
+
+
+.Hrline {
+  height: 1.2rem;
+  margin-top: 20px;
+  border: 1.2px solid black;
+}
+
+
+@media (max-width: 768px) {
+  .tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right:250px ;
+  }
+  .tech-stack h2 {
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 250px;
+}
+.Hrline {
+  display: none;
+}
+}
+
+.projects {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.project-card {
+  width: 300px;
+  /* background-color: #fff; */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card #todo{
+  margin-top: 0px;
+}
+
+.project-card a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #2d2e32;
+  font-weight: 600;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.coming-soon {
+  margin-top: 30px;
+  font-style: italic;
+  color: #888;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  background-color: #2d2e32;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-icons a {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #147efb;
+}
+
+.image-content img {
+  width: 350px;
+  border-radius: 50%;
+  border: 1.5px solid black;
+  animation-duration: 8s;
+  animation: morph 8s ease-in-out infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: morph;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.text-content img {
+  width: 75px;
+  margin-bottom: -30px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-container .left,
+.about-container .right {
+  flex: 1 1 400px;
+  min-width: 280px;
+}
+
+.about-container .right h4 {
+  font-size: 1rem;
+  color: #147efb;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.about-container .right h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-container .right p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Animations (already added earlier maybe, just ensure they're here) */
+.frontend-anim {
+  position: relative;
+  display: inline-block;
+}
+
+#laptop {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+#working {
+  position: absolute;
+  width: 180px;
+  padding: 50px;
+  bottom: -30px;
+  right: -50px;
+  border-radius: 50%;
+  z-index: 5;
+  background-color: #fff;
+}
+
+#text {
+  position: absolute;
+  width: 180px;
+  bottom: -30px;
+  right: -50px;
+  animation: spin 8s linear infinite;
+  z-index: 9;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .about-container .right h2 {
+    font-size: 1.6rem;
+  }
+
+  #working {
+    width: 60px;
+    bottom: 10px;
+    right: 0;
+    width: 150px;
+    padding: 50px;
+    bottom: -20px;
+    right: -30px;
+    border-radius: 50%;
+    z-index: 5;
+  }
+
+  #text {
+    width: 150px;
+    right: -30px;
+    bottom: -20px;
+  }
+}
+
+.contact {
+  line-height: 60px;
+  margin: 50px 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact h5 {
+  font-size: 2rem;
+}
+.Content-text {
+  color: #147efb;
+}
+
+.contact-mails {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-mails a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.contact-span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin:50px 20px;
+    line-height: 50px;
+}
+.contact-mails {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+
+}
